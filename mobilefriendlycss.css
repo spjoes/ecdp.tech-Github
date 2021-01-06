@@ -303,10 +303,20 @@ img {
   transform: translate(-50%, 0);
 }
 
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p, label{
 color: white;
 }
 
 a {
     color: #333;
+}
+/* This is purely for the demo */
+.container {
+  max-width: 560px;
+  max-height: 315px;
+}
+
+.plyr {
+  max-width: 560px;
+  max-height: 315px;
 }

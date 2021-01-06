@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../mobilefriendlycss.css">
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
+<script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+
 <title>MCD-eSmart Rabbit Hole</title>
 </head>
 <body>
@@ -59,11 +62,27 @@
 
     <center>
       <br>
-    <iframe width="560" height="315" style="border:0; border-radius: 12px;" src="https://www.youtube-nocookie.com/embed/FbZca0Kr-jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <div class="container">
+      	<div id="player" data-plyr-provider="youtube" data-plyr-embed-id="FbZca0Kr-jk"></div>
+      </div>
+
+      <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+        const player = new Plyr('#player');
+
+        // Expose
+        window.player = player;
+      });
+      </script>
+
+
+    <!-- <iframe width="560" height="315" style="border:0; border-radius: 12px;" src="https://www.youtube-nocookie.com/embed/FbZca0Kr-jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
   </center>
   </div>
-  <h5>The Black McDonald's DSi Unboxing - Source: Coddy Trentuit</h5>
+  <h5>The Black McDonald's DSi Unboxing - Source: <a href="https://www.youtube.com/watch?v=FbZca0Kr-jk">Coddy Trentuit - Youtube</a></h5>
   </div>
   </center>
 </div>
