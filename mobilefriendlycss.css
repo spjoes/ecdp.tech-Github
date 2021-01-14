@@ -303,7 +303,7 @@ img {
   transform: translate(-50%, 0);
 }
 
-h1, h2, h3, h4, h5, p, label{
+h1, h2, h3, h4, h5, h6, p, label{
 color: white;
 }
 
